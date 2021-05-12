@@ -1,0 +1,3 @@
+/home/johk/aus/rnd/doublependulum/build/CMakeFiles/rebuild_cache.dir
+/home/johk/aus/rnd/doublependulum/build/CMakeFiles/edit_cache.dir
+/home/johk/aus/rnd/doublependulum/build/CMakeFiles/dpendulum.dir
