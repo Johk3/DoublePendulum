@@ -11,7 +11,10 @@ set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
 
 find_package(GLUT REQUIRED)
-target_link_libraries(main PRIVATE GLUT::GLUT)
+target_link_libraries(doublependulum PRIVATE GLUT::GLUT)
 
 find_package(GLEW REQUIRED)
-target_link_libraries(main PRIVATE GLEW::GLEW)
+target_link_libraries(doublependulum PRIVATE GLEW::GLEW)
+
+find_package(glm CONFIG REQUIRED)
+target_link_libraries(doublependulum PRIVATE glm::glm)
