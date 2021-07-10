@@ -1,1 +1,0 @@
-/usr/bin/c++ -rdynamic CMakeFiles/dpendulum.dir/main.cpp.o -o dpendulum  -lGL -lGLU -lglut -lXmu -lXi 

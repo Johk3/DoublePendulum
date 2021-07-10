@@ -1,12 +1,14 @@
-cmake_minimum_required (VERSION 3.2)
-project (dpendulum)
-add_executable (dpendulum 
-	main.cpp
-	draw.h
-)
+cmake_minimum_required(VERSION 3.0.0)
+project(doublependulum VERSION 0.1.0)
 
-find_package(OpenGL REQUIRED)
+include(CTest)
+enable_testing()
+
+add_executable(doublependulum main.cpp)
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
+
 find_package(GLUT REQUIRED)
-include_directories( ${OPENGL_INCLUDE_DIRS}  ${GLUT_INCLUDE_DIRS} )
-
-target_link_libraries(dpendulum ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
+target_link_libraries(main PRIVATE GLUT::GLUT)
