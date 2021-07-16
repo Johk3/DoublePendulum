@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/workspaces/DoublePendulum/build",
-  "command": "/usr/bin/x86_64-linux-gnu-g++-8    -g   -o CMakeFiles/doublependulum.dir/main.cpp.o -c /workspaces/DoublePendulum/main.cpp",
-  "file": "/workspaces/DoublePendulum/main.cpp"
-}
-]
