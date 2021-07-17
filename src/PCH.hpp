@@ -69,4 +69,7 @@
 // Macros
 #define UNUSED(x) (void)(x)
 
+// CUSTOM
+void Pendulum(sf::CircleShape& head, sf::Vector2f& pendulum_pos);
+
 #endif // PRECOMPILED_HEADER_HPP

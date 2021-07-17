@@ -1,5 +1,11 @@
 #include "Platform/Platform.hpp"
 
+void Pendulum(sf::CircleShape& head, sf::Vector2f& pendulum_pos)
+{
+	pendulum_pos.x = pendulum_pos.x + 0.1;
+	head.setPosition(pendulum_pos);
+}
+
 int main()
 {
 	util::Platform platform;
@@ -27,8 +33,7 @@ int main()
 
 	while (window.isOpen())
 	{
-		pendulum_pos.x = pendulum_pos.x + 0.1;
-		shape.setPosition(pendulum_pos);
+		Pendulum(shape, pendulum_pos);
 		while (window.pollEvent(event))
 		{
 			if (event.type == sf::Event::Closed)
